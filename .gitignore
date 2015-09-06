@@ -1,9 +1,6 @@
-*.log
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-
-/readme.html
+bower_components/
+node_modules/
+.sass-cashe/
 
 .DS_Store
 Thumbs.db
