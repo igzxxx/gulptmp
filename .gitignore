@@ -1,0 +1,12 @@
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+
+/readme.html
+
+.DS_Store
+Thumbs.db
+
+config.codekit
+.codekit-cache
