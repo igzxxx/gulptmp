@@ -14,7 +14,7 @@ var imageMin = require("gulp-imagemin");
 gulp.task("html-reload", function() {
     gulp.src("./**/*html")
         .pipe(plumber())
-        .pipe(browser.reload({stream:true}))
+        .pipe(browser.reload({stream:true}));
 });
 
 //cssを保存後ベンダープレフィックスの付与、ブラウザ更新
@@ -23,7 +23,7 @@ gulp.task("css-reload", function() {
         .pipe(plumber())
         .pipe(autoprefixer())
         .pipe(gulp.dest("./css"))
-        .pipe(browser.reload({stream:true}))
+        .pipe(browser.reload({stream:true}));
 });
 
 //sassのコンパイル、ベンダープレフィックスの付与、ブラウザ更新
@@ -35,7 +35,7 @@ gulp.task("sass", function() {
         }))
         .pipe(autoprefixer())
         .pipe(gulp.dest("./css"))
-        .pipe(browser.reload({stream:true}))
+        .pipe(browser.reload({stream:true}));
 });
 
 //jsの圧縮、ブラウザ更新
@@ -44,7 +44,7 @@ gulp.task("js", function() {
         .pipe(plumber())
         .pipe(uglify())
         .pipe(gulp.dest("./js/min"))
-        .pipe(browser.reload({stream:true}))
+        .pipe(browser.reload({stream:true}));
 });
 
 //画像の圧縮
@@ -52,7 +52,7 @@ gulp.task("image-min",function(){
   	gulp.src(["img/src/**/*"])
     		.pipe(plumber())
     		.pipe(imageMin())
-    		.pipe(gulp.dest("img/"))
+    		.pipe(gulp.dest("img/"));
 });
 
 //ブラウザ更新ディレクトリ設定
