@@ -32,3 +32,11 @@ hr { visibility: hidden; border: 0; }
 .cf:before, .cf:after { content: ""; display: table; }
 
 .cf:after { clear: both; }
+
+#wrapper { width: 1000px; margin: 0 auto; }
+
+h1 { font-size: 20px; }
+
+h2 { background-color: #ccc; width: 200px; border-radius: 5px; }
+
+h2:hover { -webkit-transform: translate(10px, 0); -ms-transform: translate(10px, 0); transform: translate(10px, 0); }
